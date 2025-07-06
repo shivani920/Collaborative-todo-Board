@@ -55,7 +55,7 @@ app.use(limiter)
 
 // MongoDB connection
 mongoose
-  .connect(process.env.MONGODB_URI || "mongodb://localhost:27017/collaborative-todo", {
+  .connect(process.env.MONGODB_URI || "mongodb+srv://shivi-24:i7%239HLa%23-sJwgUv@cluster0.esfp6h9.mongodb.net/collaborative-todo?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
