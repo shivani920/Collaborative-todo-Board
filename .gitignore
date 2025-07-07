@@ -1,39 +1,31 @@
 # Node modules
+node_modules/
 **/node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
-# Build files
+# Build
+build/
+dist/
 **/build/
 **/dist/
 
-# Environment variables
+# Env files
+.env
+.env.*
 **/.env
-**/.env.*  # for .env.development, .env.local, etc.
 
 # Logs
-logs
 *.log
-**/logs
+logs/
 **/*.log
+**/logs/
 
-# OS specific
+# System & IDE
 .DS_Store
 Thumbs.db
-
-# IDE specific
 .vscode/
 .idea/
-*.sublime-project
-*.sublime-workspace
 
-# Test coverage
+# Others
 coverage/
-
-# Misc
-*.local
-.env.local
-*.cache
 .next/
-
+.cache/

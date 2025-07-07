@@ -1,10 +1,10 @@
 const jwt = require("jsonwebtoken")
 
-// Use a consistent JWT secret
-const JWT_SECRET = process.env.JWT_SECRET || "collaborative-todo-secret-key-2024-development"
+// Use a consistent JWT secret - MUST match between all instances
+const JWT_SECRET = process.env.JWT_SECRET || "collaborative-todo-secret-key-2024-production-shivi-consistent"
 const JWT_EXPIRE = process.env.JWT_EXPIRE || "7d"
 
-console.log("🔑 JWT Secret configured:", JWT_SECRET.substring(0, 10) + "...")
+console.log("🔑 JWT Secret configured:", JWT_SECRET.substring(0, 20) + "...")
 
 const generateToken = (payload) => {
   try {
